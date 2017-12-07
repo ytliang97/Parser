@@ -1,2 +1,3 @@
 # Parser
-Input: token&amp;CFG&lt;br/>Output: parsing table&amp;applying rule
+Input: token&CFG<br/>
+Output: parsing table&applying rule
