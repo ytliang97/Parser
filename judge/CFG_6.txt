@@ -1,0 +1,5 @@
+1 Program > begin Stmts end $
+2 Stmts > Stmt ; Stmts
+3 | lamda
+4 Stmt > simplestmt
+5 | begin Stmts end

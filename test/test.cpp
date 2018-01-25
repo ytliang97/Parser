@@ -1,4 +1,31 @@
 #include <iostream>
+#include <set>
+
+std::set<std::string> worklist;
+
+int main() {
+	worklist.insert("C");
+	worklist.insert("A");
+	worklist.insert("B");
+	worklist.insert("Q");
+
+	while(!worklist.empty()){
+		std::set<std::string>::iterator it = worklist.begin();
+		std::cout << *it << std::endl;
+		std::string t = *it;
+		worklist.erase(it);
+		std::cout << t << std::endl;
+	}
+}
+
+
+
+
+
+/*
+
+#include <iostream>
+
 #include <vector>
 
 int main() {
@@ -44,11 +71,19 @@ int main() {
 	else {
 		std::cout << std::endl << "Is not empty!";
 	}
+	std::cout << std::endl;
 
-	std::string st = "0";
-	std::cout << st-'0' << std::endl;
+
+
+	myVector2.erase(myVector2.begin());
+
+	for(unsigned int i = 0; i < myVector2.size(); i++) {
+		std::cout << myVector2[i] << " " << std::endl;
+	}
+
 	
 	return 0;
 	
 	 
 }
+*/

@@ -1,0 +1,1 @@
+floatdcl id intdcl id id assign id plus inum minus fnum id assign inum print id $

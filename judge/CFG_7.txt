@@ -1,0 +1,9 @@
+1 Start > Expr $
+2 Expr > ( Expr )
+3 | - Expr
+4 | Var ExprTail
+5 ExprTail > - Expr
+6 | lamda
+7 Var > id VarTail
+8 VarTail > ( Expr )
+9 | lamda
